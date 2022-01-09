@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react",
+    "paths": {
+      "components/*": ["App/Components/*"],
+      "configs": ["App/Configs/index"],
+      "configs/*": ["App/Configs/*"],
+      "containers/*": ["App/Containers/*"],
+      "navigations": ["App/Navigations/index"],
+      "navigations/*": ["App/Navigations/*"],
+      "images/*": ["App/Images/*"],
+      "utils/*": ["App/Utils/*"],
+      "hooks/*": ["App/Hooks/*"],
+      "actions/*": ["App/Redux/Actions/*"],
+    }
+  }
+}
