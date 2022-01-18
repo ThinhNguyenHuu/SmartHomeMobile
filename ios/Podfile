@@ -12,6 +12,8 @@ target 'SmartHomeMobile' do
     :hermes_enabled => false
   )
 
+  pod 'MQTTClient'
+
   target 'SmartHomeMobileTests' do
     inherit! :complete
     # Pods for testing
