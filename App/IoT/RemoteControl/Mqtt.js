@@ -68,5 +68,5 @@ export const mqttPublishAction = async (data) => {
   if (mqttClient) {
     isConnected = await mqttClient.isConnected();
   }
-  isConnected && mqttClient.publish('/action', JSON.stringify(data), 0, false);
+  isConnected && mqttClient.publish('/action', data, 0, false);
 }
