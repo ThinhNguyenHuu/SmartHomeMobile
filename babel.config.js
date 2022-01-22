@@ -25,6 +25,8 @@ module.exports = {
           utils: './App/Utils',
           hooks: './App/Hooks',
           actions: './App/Redux/Actions',
+          iot: './App/IoT',
+          context: './App/Context',
         },
       },
     ],

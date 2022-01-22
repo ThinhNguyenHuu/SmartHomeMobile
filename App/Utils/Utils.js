@@ -17,11 +17,7 @@ export const deleteDefaultAuthToken = () => {
 };
 
 export const ToastBottomHelper = {
-  success: (msg, timeout = 1000) => {
-    if (!Toast._ref) {
-      return;
-    }
-
+  success: (msg, timeout = 3000) => {
     Toast.show({
       type: 'success',
       position: 'bottom',
@@ -29,12 +25,7 @@ export const ToastBottomHelper = {
       visibilityTime: timeout,
     });
   },
-  error: (msg, timeout = 1000) => {
-    if (!Toast._ref) {
-      return;
-    }
-    console.log(msg);
-
+  error: (msg, timeout = 3000) => {
     Toast.show({
       type: 'error',
       position: 'bottom',

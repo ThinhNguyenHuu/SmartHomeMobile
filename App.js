@@ -1,16 +1,14 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { Colors } from 'configs';
+import AppWithNavigationState from 'navigations';
+import { AppProvider } from './App/Context';
 
 const App = () => {
-  return <View style={styles.container} />;
+  return (
+    <AppProvider>
+      <AppWithNavigationState />
+    </AppProvider>
+  );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.White,
-  },
-});
 
 export default App;
